@@ -20,7 +20,7 @@ To get started with Crafted Sites:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/crafted-sites.git
+   git clone https://github.com/Santhosh-CS07/Crafted-Sites.git
    ```
 2. Explore the available templates and components.
 3. Start building your own website or contribute to the project by sharing your ideas and designs.
