@@ -14,7 +14,7 @@
 .logo{
     display:flex;
     list-style-type: none;
-    
+    justify-content: space-evenly;
 }
 
 .logo > li{
@@ -49,7 +49,7 @@
 
 .schoolname{
     list-style-type: none;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     padding-top:10px;
 }
 
@@ -60,14 +60,15 @@
 
 }
 
-.logoname{
+/* .logoname{
     display:flex;
     justify-content:space-evenly;
     padding-left: 50px;
-}
+} */
 
 .nav{
     display:flex;
+   justify-content: center;
     list-style-type: none;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
@@ -75,7 +76,7 @@
 }
 
 .navbar{
-    display:flex;
+    /* display:flex; */
     justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -148,10 +149,10 @@ h2{
     justify-content: space-evenly;
 }
 
-.line2{
+/* .line2{
     display: flex;
     justify-content: space-evenly;
-}
+} */
 
 .facilities{
     background-color:#dbd5d5;

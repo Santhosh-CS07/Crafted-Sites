@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="../../css/index.css"/>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5148367e53.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div>
@@ -14,8 +15,12 @@
         <div class="details">
             <div class="phno">+919398042106   |   sashacademy@gmail.com</div>
             <div>
-                <ul class="logo">
-                    <li>
+                <ul class="logo mr-6 py-2">
+                  <i class="fa-brands fa-whatsapp mr-4" style="font-size: 2rem; color: white;"></i>
+                  <i class="fa-brands fa-facebook mr-4" style="font-size: 2rem; color: white;"></i>
+                  <i class="fa-brands fa-instagram mr-4" style="font-size: 2rem; color:  white ;"></i>
+                  <i class="fa-brands fa-linkedin mr-4" style="font-size: 2rem; color: white;"></i>
+                    <!-- <li>
                         <a href="#"><img class="image" src="../../images/logo/wts app.png" style="width: 30px;height:30px;"/></a>
                     </li>
                     <li>
@@ -29,27 +34,20 @@
                     </li>
                     <li>
                         <a href="#"><img class="image" src="../../images/logo/twitter.png" style="width: 30px;height:30px;"/></a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
         <!-- nav bar section -->
-         <div class="navbar">
-            <div class="logoname">
-                <div>
+         <div class="sm:flex block justify-between">
+            <div class="flex pl-8 pb-2">
                     <img class="school"src="../../images/logo/school logo.png"/>
-                </div>
-                <div>
-                    <ul class="schoolname">
-                        <li>
-                            <h1 style="color:rgb(2, 2, 61); font-weight: bolder; padding-left: 10px; font-size:40px">SASSH ACADEMY</h1>
-                        </li >
-                        <li class="tagline" style="color:rgb(92, 11, 24); text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><h4>Your Pathway to Lifelong Learning</h4></li>
-                    </ul>
-                </div>
+                   <div>
+                    <h1 style="color:rgb(2, 2, 61); font-weight: bolder; padding-left: 10px; font-size:40px">SASSH ACADEMY</h1>
+                    <p class="text-center">Your Pathway to Lifelong Learning</p>
+                   </div>
             </div>
-            <div>
-                <ul class="nav">
+                <ul class="nav pb-2 mt-0 sm:mt-6 pt-0 justify-items-center">
                     <li>
                         <a href="#image1" style="color:black;">Home</a>
                     </li>
@@ -67,7 +65,6 @@
                     </li>
                 </ul>
             </div>
-         </div>
 
         <!-- image section -->
         <div class="imgsection" id="image1">
@@ -89,12 +86,12 @@
         </div>
 
         <!-- facilities -->
-        <div class="facilities" id="section2">
-            <h1 class="head" style="padding-left: 35px;">What We Provide</h1>
-            <div class="line1">
-                <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96" style="height: 400px; width: 300px;">
+        <div class="facilities " id="section2">
+            <h1 class="head">What We Provide</h1>
+            <div class="m-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+                <div class="relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg">
                     <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                      <img src= "../../images/image.png" style="height: 200px; width: max-content;" />
+                      <img src= "../../images/image.png" style="height: 200px; width: 100%" />
                     </div>
                     <div class="p-4">
                       <h6 class="mb-2 text-slate-800 text-xl font-semibold" style="text-align: center;">
@@ -107,9 +104,9 @@
                     
                 </div>  
                   
-                <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96" style="height: 400px; width: 300px;">
+                <div class="relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg">
                     <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                      <img src= "../../images/sports.png" style="height: 200px; width:auto" />
+                      <img src= "../../images/sports.png" style="height: 200px; width:100%" />
                     </div>
                     <div class="p-4">
                       <h6 class="mb-2 text-slate-800 text-xl font-semibold" style="text-align: center;">
@@ -124,9 +121,9 @@
 
 
 
-                <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96" style="height: 400px; width: 300px;">
+                <div class="relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg" >
                     <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                      <img src= "../../images/bus.png" style="height: 200px;" />
+                      <img src= "../../images/bus.png" style="height: 200px; width:100%" />
                     </div>
                     <div class="p-4">
                       <h6 class="mb-2 text-slate-800 text-xl font-semibold" style="text-align: center;">
@@ -141,14 +138,14 @@
             </div>
 
 
-            <div class="line2">
-                <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96" style="height: 400px; width: 300px;">
+            <div class="m-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+                <div class="relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg " >
                     <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                      <img src= "../../images/classsr.png" style="height: 200px;" />
+                      <img src= "../../images/classsr.png" style="height: 200px; width:100%;" />
                     </div>
                     <div class="p-4">
                       <h6 class="mb-2 text-slate-800 text-xl font-semibold" style="text-align: center;">
-                        Digital Classrooms
+                      Digital Classrooms
                       </h6>
                       <p class="text-slate-600 leading-normal">
                         Our digital classrooms are equipped with modern technology, including interactive smart boards and multimedia tools, creating an engaging and dynamic learning environment. These classrooms enhance understanding, encourage collaboration, and make learning more interactive and fun for students.
@@ -158,9 +155,9 @@
                 </div>
 
 
-                <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96" style="height: 400px; width: 300px;">
+                <div class="relative flex flex-col  bg-white shadow-sm border border-slate-200 rounded-lg " ">
                     <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                      <img src= "../../images/trips.png" style="height: 200px;" />
+                      <img src= "../../images/trips.png" style="height: 200px; width:100%" />
                     </div>
                     <div class="p-4">
                       <h6 class="mb-2 text-slate-800 text-xl font-semibold" style="text-align: center;">
@@ -173,9 +170,9 @@
                     
                 </div>
 
-                <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96" style="height: 400px; width: 300px;">
+                <div class="relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg " >
                     <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                      <img src= "../../images/art.png" style="height: 200px;" />
+                      <img src= "../../images/art.png" style="height: 200px; width:100%" />
                     </div>
                     <div class="p-4">
                       <h6 class="mb-2 text-slate-800 text-xl font-semibold" style="text-align: center;">
