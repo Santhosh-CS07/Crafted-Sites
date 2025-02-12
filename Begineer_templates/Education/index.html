@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="../../css/index.css"/>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5148367e53.js" crossorigin="anonymous"></script>
+    <script>
+      function toggleMenu() {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+      }
+  </script>
 </head>
 <body>
     <div>
@@ -39,33 +44,46 @@
             </div>
         </div>
         <!-- nav bar section -->
-         <div class="sm:flex block justify-between">
-            <div class="flex pl-8 pb-2">
-                    <img class="school"src="../../images/logo/school logo.png"/>
-                   <div>
-                    <h1 style="color:rgb(2, 2, 61); font-weight: bolder; padding-left: 10px; font-size:40px">SASSH ACADEMY</h1>
-                    <p class="text-center">Your Pathway to Lifelong Learning</p>
-                   </div>
-            </div>
-                <ul class="nav pb-2 mt-0 sm:mt-6 pt-0 justify-items-center">
-                    <li>
-                        <a href="#image1" style="color:black;">Home</a>
-                    </li>
-                    <li>
-                        <a href="#section1" style="color:black;">About</a>
-                    </li>
-                    <li>
-                        <a href="#section2" style="color:black;">Facilities</a>
-                    </li>
-                    <li>
-                        <a href="#section3" style="color:black;">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="#section4" style="color:black;">Contact</a>
-                    </li>
-                </ul>
-            </div>
-
+        <nav class="bg-white shadow-md">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="flex justify-between items-center py-4">
+                  <!-- Logo and School Name -->
+                  <div class="flex items-center">
+                      <img src="../../images/logo/school logo.png" class="h-12 w-auto" alt="School Logo">
+                      <div class="pl-3">
+                          <h1 class="text-2xl font-bold text-blue-900">SASSH ACADEMY</h1>
+                          <p class="text-sm text-gray-600">Your Pathway to Lifelong Learning</p>
+                      </div>
+                  </div>
+  
+                  <!-- Desktop Menu -->
+                  <ul class="hidden sm:flex space-x-6">
+                      <li><a href="#image1" class="text-gray-700 hover:text-blue-600 flex items-center"><i class="fas fa-home mr-2"></i> Home</a></li>
+                      <li><a href="#section1" class="text-gray-700 hover:text-blue-600 flex items-center"><i class="fas fa-info-circle mr-2"></i> About</a></li>
+                      <li><a href="#section2" class="text-gray-700 hover:text-blue-600 flex items-center"><i class="fas fa-building mr-2"></i> Facilities</a></li>
+                      <li><a href="#section3" class="text-gray-700 hover:text-blue-600 flex items-center"><i class="fas fa-images mr-2"></i> Gallery</a></li>
+                      <li><a href="#section4" class="text-gray-700 hover:text-blue-600 flex items-center"><i class="fas fa-phone-alt mr-2"></i> Contact</a></li>
+                  </ul>
+  
+                  <!-- Mobile Menu Button -->
+                  <button class="sm:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
+                      <i class="fas fa-bars text-2xl"></i>
+                  </button>
+              </div>
+          </div>
+  
+          <!-- Mobile Dropdown Menu -->
+          <div id="mobile-menu" class="hidden sm:hidden bg-white border-t border-gray-200">
+              <ul class="py-2">
+                  <li><a href="#image1" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"><i class="fas fa-home mr-2"></i> Home</a></li>
+                  <li><a href="#section1" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"><i class="fas fa-info-circle mr-2"></i> About</a></li>
+                  <li><a href="#section2" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"><i class="fas fa-building mr-2"></i> Facilities</a></li>
+                  <li><a href="#section3" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"><i class="fas fa-images mr-2"></i> Gallery</a></li>
+                  <li><a href="#section4" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"><i class="fas fa-phone-alt mr-2"></i> Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+  
         <!-- image section -->
         <div class="imgsection" id="image1">
             <img class="academy" src="../../images/school building.jpg" />
